@@ -24,7 +24,8 @@ func TestInsertionSort(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			got := InsertionSort(tt.input)
 			if !reflect.DeepEqual(got, tt.expected) {
-				t.Errorf("InsertionSort() = %v, want %v", got, tt.expected)
+				t.Errorf("Test case %d '%s'.............FAILED ❌\nExpected: %v\nActual:   %v\n", i, tt.name, tt.expected, got)
+				// t.Errorf("InsertionSort() = %v, want %v", got, tt.expected)
 			} else {
 				fmt.Printf("Test case %d '%s'.............PASSED ✅\n", i, tt.name)
 			}
