@@ -1,0 +1,9 @@
+Sort Type,Array Size,Execution Time (ms)
+Insertion Sort,100,0.00
+Merge Sort,100,0.02
+Insertion Sort,1000,0.11
+Merge Sort,1000,0.18
+Insertion Sort,10000,9.54
+Merge Sort,10000,2.45
+Insertion Sort,50000,254.17
+Merge Sort,50000,8.97
