@@ -1,4 +1,4 @@
-package main
+package selection
 
 // SelectionSort sorts an array using the selection sort algorithm.
 // This algorithm iterates over the array and for each position,
