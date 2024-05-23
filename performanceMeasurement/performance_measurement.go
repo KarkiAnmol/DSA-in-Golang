@@ -3,6 +3,7 @@ package main
 import (
 	insertion "DSA-in-Golang/insertionSort"
 	merge "DSA-in-Golang/mergeSort"
+	quick "DSA-in-Golang/quickSort"
 	"encoding/csv"
 	"math/rand"
 	"os"
@@ -32,6 +33,9 @@ func main() {
 
 		duration = testSorting(merge.MergeSort, array)
 		writer.Write([]string{"Merge Sort", strconv.Itoa(size), formatDuration(duration)})
+
+		duration = testSorting(quick.QuickSort, array)
+		writer.Write([]string{"Quick Sort", strconv.Itoa(size), formatDuration(duration)})
 	}
 }
 
